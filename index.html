@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="src/logo.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <title>Blog San Luisano</title>
+</head>
+<body>
+    <header>
+        <h1>BLOG SAN LUISANO</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Inicio</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Destacados</a>
+                        <a href="index.html#proyecto">Proyecto</a>
+                    </div>
+                </li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Noticias</a>
+                    <div class="dropdown-content">
+                        <a href="noticias.html">Noticias sobre la universidad</a>
+                        <a href="noticias.html#blog">Noticias sobre el blog</a>
+                    </div>
+            </ul>
+            <div class="modo">
+                <button id="modo-oscuro-toggle">Cambiar Modo Claro/Oscuro</button>
+            </div>
+            <div class="auth-buttons">
+                <button id="login-btn">Iniciar Sesión</button>
+                <button id="create-account-btn">Crear cuenta</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="destacados">
+            <h2>DESTACADOS</h2>
+            <article>
+                <div class="artículos">
+                    <header>
+                        <h2>Creación del Blog</del></h2>
+                    </header>
+                </div>
+                <div class="contenido">
+                    <p class="fecha">19/02/2024</p>
+                    <p>Iniciamos hoy el proceso de desarrollo del sitio web, empleando HTML y CSS para su construcción.</p>
+                </div>
+                <div class="comentarios-seccion">
+                    <h3>Comentarios</h3>
+                    <div class="comentarios-lista"></div>
+                    <form class="form-comentario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="nombre" name="nombre" required>
+                        <label for="comentario">Comentario:</label>
+                        <textarea class="comentario" name="comentario" required></textarea>
+                        <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                    </form>
+                </div>
+                <div class="calificacion">
+                    <p>Califica este artículo:</p>
+                    <div class="estrellas" data-rating="0">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                    <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                    <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                </div>
+            </article>
+            <article>
+                <div class="artículos">
+                    <header>
+                        <h2>Hosting en Netlify</h2>
+                    </header>
+                </div>
+                <div class="contenido">
+                    <p class="fecha">19/02/2024</p>
+                    <p>Aprovechamos la robusta plataforma de Netlify para alojar nuestro sitio web, previamente almacenado en Github. Esta integración ofrece un despliegue fluido y eficiente, garantizando la disponibilidad constante del sitio y facilitando actualizaciones rápidas y seguras..</p>
+                </div>
+                <div class="comentarios-seccion">
+                    <h3>Comentarios</h3>
+                    <div class="comentarios-lista"></div>
+                    <form class="form-comentario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="nombre" name="nombre" required>
+                        <label for="comentario">Comentario:</label>
+                        <textarea class="comentario" name="comentario" required></textarea>
+                        <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                    </form>
+                </div>
+                <div class="calificacion">
+                    <p>Califica este artículo:</p>
+                    <div class="estrellas" data-rating="0">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                    <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                    <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                </div>
+            </article>   
+            <article>
+                <div class="artículos">
+                    <header>
+                        <h2>Evaluación del docente</del></h2>
+                    </header>
+                </div>
+                <div class="contenido">
+                    <p class="fecha">19/02/2024</p>
+                    <p>Se informa a todos los estudiantes matriculados en el Semestre Académico 2023 - I que la <em>Evaluación Estudiantil al Desempeño Docente se realizará desde el sábado 17 de febrero al domingo 03 de marzo</em> del presente año, para lo cual los estudiantes deben responder las encuestas asignadas. Vencido este plazo, no se podrán responder las encuestas.</p>
+                    <p>Es importante recordarles que <em>el estudiante que no cumpla con responder las encuestas de la Evaluación Estudiantil al Desempeño Docente no podrá matricularse en el próximo semestre académico</em>, según lo establece el artículo 19° del Reglamento de Matrícula. Asimismo, culminado el Semestre Académico 2023-I no será posible realizar la mencionada evaluación.</p>                        
+                    <p> responder las encuestas, debes ingresar a la Intranet (disponible en <a href="https://intranet.unica.edu.pe">intranet.unica.edu.pe)</a> empleando la misma credencial del aula virtual y responder por cada asignatura matriculada</p>
+                    <strong>EL VICERRECTORADO ACADÉMICO</strong>
+                    <iframe width="750" height="350" src="src/SIGE - Evaluación del Desempeño Docente Semestre 2023 - I.mp4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="comentarios-seccion">
+                    <h3>Comentarios</h3>
+                    <div class="comentarios-lista"></div>
+                    <form class="form-comentario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="nombre" name="nombre" required>
+                        <label for="comentario">Comentario:</label>
+                        <textarea class="comentario" name="comentario" required></textarea>
+                        <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                    </form>
+                </div>
+                <div class="calificacion">
+                    <p>Califica este artículo:</p>
+                    <div class="estrellas" data-rating="0">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                    <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                    <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                </div>
+            </article>
+            <article>
+                <div class="artículos">
+                    <header>
+                        <h2>Implementación del Modo Oscuro</h2>
+                    </header>
+                </div>
+                <div class="contenido">
+                    <p class="fecha">20/02/2024</p>
+                    <p>Estamos emocionados de anunciar la reciente implementación del tan esperado "Modo Oscuro" en nuestro sitio web. Esta característica proporciona a nuestros usuarios la flexibilidad de personalizar su experiencia de navegación, permitiéndoles elegir entre el tradicional "Modo Claro" o el elegante "Modo Oscuro".</p>
+                    <p>Entendemos que la preferencia por el modo de color puede variar entre los usuarios, y es por eso que nos esforzamos por ofrecer opciones que se adapten a cada estilo y necesidad. La implementación del Modo Oscuro no solo es estéticamente atractiva, sino que también proporciona beneficios prácticos.</p>
+                    <p>Al activar el Modo Oscuro, la interfaz del sitio adopta una paleta de colores más tenue, lo que puede resultar más suave para los ojos, especialmente en condiciones de poca luz. Esto no solo mejora la legibilidad, sino que también puede ayudar a reducir la fatiga visual, brindando una experiencia de navegación más cómoda y agradable.</p>
+                    <p>¿Cómo puedes activar el Modo Oscuro? Es tan sencillo como hacer clic en el botón de alternancia ubicado en la parte superior de la página. Basta con seleccionar tu preferencia y disfrutar de la nueva apariencia del sitio adaptada a tus gustos personales.</p>
+                    <p>Además, nos complace informarte que hemos diseñado cuidadosamente la transición entre el Modo Claro y el Modo Oscuro para que sea suave y sin interrupciones. Ya sea que prefieras la luminosidad del día o la elegancia de la noche, nuestro sitio se ajustará perfectamente a tu elección.</p>
+                    <p>Estamos comprometidos en ofrecer una experiencia de usuario excepcional, y la introducción del Modo Oscuro es solo una de las muchas mejoras que estamos implementando. ¡Esperamos que disfrutes de esta nueva función y agradecemos tu continuo apoyo mientras seguimos mejorando tu experiencia en nuestro sitio web!</p>
+                </div>
+                <div class="comentarios-seccion">
+                    <h3>Comentarios</h3>
+                    <div class="comentarios-lista"></div>
+                    <form class="form-comentario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="nombre" name="nombre" required>
+                        <label for="comentario">Comentario:</label>
+                        <textarea class="comentario" name="comentario" required></textarea>
+                        <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                    </form>
+                </div>
+                <div class="calificacion">
+                    <p>Califica este artículo:</p>
+                    <div class="estrellas" data-rating="0">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                    <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                    <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                </div>
+            </article>
+        </div>
+    </main>
+    <section id="proyecto">
+        <aside class="aside">
+            <div class="proyecto">
+                <h2>PROYECTO</h2>
+            </div>
+            <div class="contenidoproyecto">
+                <h3>Acerca del proyecto:</h3>
+                <p>El equipo N°2 se enorgullece en presentar el proyecto del sitio web creado en el marco de la asignatura "Introducción a la Ingeniería de Sistemas", bajo la valiosa orientación del ingeniero Erwin Pablo Peña Casas. Este proyecto aborda de manera integral los conceptos y habilidades adquiridos en la asignatura, destacando la capacidad del equipo para aplicar los principios fundamentales de la ingeniería de sistemas en la creación de un sitio web funcional y estéticamente atractivo. Con este proyecto, buscamos no solo cumplir con los requisitos académicos, sino también destacarnos como creadores y aplicadores de conocimiento.</p>
+                <div class="integrante">
+                    <img src="src/docente.jpeg" alt="Docente">
+                    <div class="docente">
+                        <h4>Ing. Erwin Pablo Peña Casas</h4>
+                    </div>
+            </div>
+        </aside>
+    </section>
+    <footer>
+        <p>&copy; 2024 Blog San Luisano. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

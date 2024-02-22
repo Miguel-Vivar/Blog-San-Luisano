@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="src/logo.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <title>Noticias | Blog San Luisano</title>
+</head>
+<body>
+    <header>
+        <h1>NOTICIAS</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Inicio</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Destacados</a>
+                        <a href="index.html#proyecto">Proyecto</a>
+                    </div>
+                </li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Noticias</a>
+                    <div class="dropdown-content">
+                        <a href="noticias.html">Noticias sobre la universidad</a>
+                        <a href="noticias.html#blog">Noticias sobre el blog</a>
+                    </div>
+            </ul>
+            <div class="modo">
+                <button id="modo-oscuro-toggle">Cambiar Modo Claro/Oscuro</button>
+            </div>
+            <div class="auth-buttons">
+                <button id="login-btn">Iniciar Sesión</button>
+                <button id="create-account-btn">Crear cuenta</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="universidad">
+            <section id="universidad">
+                <h2>Noticias sobre la Universidad</h2>
+                <article>
+                    <div class="artículos">
+                        <header>
+                            <h2>Evaluación del docente</del></h2>
+                        </header>
+                    </div>
+                    <div class="contenido">
+                        <p class="fecha">19/02/2024</p>
+                        <p>Se informa a todos los estudiantes matriculados en el Semestre Académico 2023 - I que la <em>Evaluación Estudiantil al Desempeño Docente se realizará desde el sábado 17 de febrero al domingo 03 de marzo</em> del presente año, para lo cual los estudiantes deben responder las encuestas asignadas. Vencido este plazo, no se podrán responder las encuestas.</p>
+                        <p>Es importante recordarles que <em>el estudiante que no cumpla con responder las encuestas de la Evaluación Estudiantil al Desempeño Docente no podrá matricularse en el próximo semestre académico</em>, según lo establece el artículo 19° del Reglamento de Matrícula. Asimismo, culminado el Semestre Académico 2023-I no será posible realizar la mencionada evaluación.</p>                        
+                        <p> responder las encuestas, debes ingresar a la Intranet (disponible en <a href="https://intranet.unica.edu.pe">intranet.unica.edu.pe)</a> empleando la misma credencial del aula virtual y responder por cada asignatura matriculada</p>
+                        <strong>EL VICERRECTORADO ACADÉMICO</strong>
+                        <iframe width="750" height="350" src="src/SIGE - Evaluación del Desempeño Docente Semestre 2023 - I.mp4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="comentarios-seccion">
+                        <h3>Comentarios</h3>
+                        <div class="comentarios-lista"></div>
+                        <form class="form-comentario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="nombre" name="nombre" required>
+                            <label for="comentario">Comentario:</label>
+                            <textarea class="comentario" name="comentario" required></textarea>
+                            <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                        </form>
+                    </div>
+                    <div class="calificacion">
+                        <p>Califica este artículo:</p>
+                        <div class="estrellas" data-rating="0">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                        <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <div class="blog">
+            <section id="blog">
+                <h2>Noticias sobre el Blog</h2>
+                <article>
+                    <div class="artículos">
+                        <header>
+                            <h2>Optimización del Sistema de Calificación por Estrella</h2>
+                        </header>
+                    </div>
+                    <div class="contenido">
+                        <p class="fecha">21/02/2024</p>
+                        <p>Estamos emocionados por anunciar la implementación del sistema de calificación por estrella en nuestro blog, ofreciendo a nuestros lectores una forma visual e intuitiva de expresar sus opiniones sobre cada artículo. La introducción de esta función busca enriquecer la interacción y brindar a los lectores la oportunidad de destacar aquellos artículos que encuentren más valiosos.</p>
+                        <p>Con esta implementación, cada artículo ahora presenta un conjunto de estrellas que los lectores pueden seleccionar para indicar su nivel de satisfacción. Las calificaciones por estrella proporcionan una manera rápida y sencilla de expresar opiniones positivas sobre un artículo en particular. Sin embargo, es importante destacar que, por el momento, esta función solo tiene un propósito visual y no se ha integrado completamente debido a las limitaciones en nuestros conocimientos actuales sobre bases de datos.</p>
+                        <p>Estamos trabajando diligentemente para mejorar y expandir esta función en futuras actualizaciones. La visión es crear un sistema de calificación integral que refleje de manera precisa la valoración de nuestros lectores y enriquezca la experiencia de explorar y descubrir contenido en el Blog San Luisano.</p>
+                        <p>Agradecemos su comprensión y paciencia mientras seguimos avanzando en el desarrollo de nuevas características y mejoras. Su participación es fundamental para nosotros, y esperamos que disfruten de esta adición visual al interactuar con nuestros artículos. ¡Gracias por ser parte de la comunidad del Blog San Luisano!</p>
+                    </div>
+                    <div class="comentarios-seccion">
+                        <h3>Comentarios</h3>
+                        <div class="comentarios-lista"></div>
+                        <form class="form-comentario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="nombre" name="nombre" required>
+                            <label for="comentario">Comentario:</label>
+                            <textarea class="comentario" name="comentario" required></textarea>
+                            <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                        </form>
+                    </div>
+                    <div class="calificacion">
+                        <p>Califica este artículo:</p>
+                        <div class="estrellas" data-rating="0">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                        <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                    </div>
+                </article>
+                
+                <article>
+                    <div class="artículos">
+                        <header>
+                            <h2>Explorando el Acceso Personalizado: Inicio de Sesión y Creación de Cuenta</h2>
+                        </header>
+                    </div>
+                    <div class="contenido">
+                        <p class="fecha">21/02/2024</p>
+                        <p>En nuestra constante búsqueda de mejorar la interactividad y personalización en el Blog San Luisano, nos complace anunciar la implementación de un sistema de inicio de sesión y creación de cuenta. Esta emocionante adición abre las puertas a una experiencia más personalizada y conectada para nuestros lectores.</p>      
+                        <p>Aunque la función actual es principalmente visual y permite a los usuarios acceder a un área personalizada, es importante destacar que, debido a las limitaciones actuales en nuestro conocimiento sobre bases de datos, la implementación completa de estas funciones está en desarrollo. Estamos trabajando arduamente para integrar un sistema de almacenamiento seguro y eficiente para perfiles de usuarios y datos asociados.</p>
+                        <p>Con el sistema de inicio de sesión, los lectores pueden disfrutar de beneficios adicionales, como la capacidad de guardar sus artículos favoritos, recibir recomendaciones personalizadas y participar en discusiones de manera más interactiva. Además, la opción de creación de cuenta permite a nuevos usuarios unirse a nuestra comunidad y sumergirse en la riqueza de contenido que ofrecemos.</p>
+                        <p>Reconocemos la importancia de la privacidad y seguridad de los datos, y estamos comprometidos en garantizar que la implementación completa de estas funciones cumpla con los estándares más altos. Estamos emocionados por el potencial que estas adiciones tienen para mejorar su experiencia en el Blog San Luisano y agradecemos su paciencia mientras trabajamos en hacerlas completamente funcionales.</p>
+                        <p>Estén atentos a futuras actualizaciones, ya que continuamos trabajando para ofrecer un espacio interactivo y personalizado para nuestra creciente comunidad. ¡Gracias por ser parte del viaje del Blog San Luisano!</p>
+                    </div>
+                    <div class="comentarios-seccion">
+                        <h3>Comentarios</h3>
+                        <div class="comentarios-lista"></div>
+                        <form class="form-comentario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="nombre" name="nombre" required>
+                            <label for="comentario">Comentario:</label>
+                            <textarea class="comentario" name="comentario" required></textarea>
+                            <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                        </form>
+                    </div>
+                    <div class="calificacion">
+                        <p>Califica este artículo:</p>
+                        <div class="estrellas" data-rating="0">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                        <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                    </div>
+                </article>
+                <article>
+                    <div class="artículos">
+                        <header>
+                            <h2>Optimización del Sistema de Comentarios</h2>
+                        </header>
+                    </div>
+                    <div class="contenido">
+                        <p class="fecha">21/02/2024</p>
+                        <p>Estamos emocionados por anunciar la optimización de nuestro sistema de comentarios, brindando a nuestros lectores una experiencia de participación aún más fluida y enriquecedora. La implementación de la caja de comentarios no solo se trata de un espacio para expresar opiniones, sino de una comunidad donde compartir ideas y generar conversaciones significativas.</p>
+                        <p>Con esta mejora, hemos perfeccionado la interfaz de la caja de comentarios para hacerla más intuitiva y atractiva. Ahora, los usuarios pueden interactuar de manera más eficiente, respondiendo y reaccionando a los comentarios de otros lectores. La estructura mejorada facilita la lectura y la participación, fomentando un intercambio de ideas más dinámico.</p>
+                        <p>Además, hemos implementado una función de notificación para mantener a los usuarios actualizados sobre las respuestas a sus comentarios y nuevas interacciones en las discusiones. Esto proporciona una experiencia más inmersiva y conectada, permitiendo a nuestros lectores seguir de cerca las conversaciones que les interesan.</p>
+                        <p>La caja de comentarios ahora cuenta con herramientas de moderación mejoradas para garantizar un ambiente respetuoso y constructivo. La detección automática de contenido inapropiado y las opciones de denuncia ofrecen un entorno seguro y acogedor para todos los participantes.</p>
+                        <p>Estamos comprometidos en hacer de nuestra plataforma un espacio donde la voz de cada lector sea valorada. La optimización del sistema de comentarios es un paso más hacia esa visión, y esperamos que disfruten de esta mejora al explorar y participar en el Blog San Luisano. ¡Agradecemos su continua participación y apoyo!</p>
+                    </div>
+                    <div class="comentarios-seccion">
+                        <h3>Comentarios</h3>
+                        <div class="comentarios-lista"></div>
+                        <form class="form-comentario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="nombre" name="nombre" required>
+                            <label for="comentario">Comentario:</label>
+                            <textarea class="comentario" name="comentario" required></textarea>
+                            <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                        </form>
+                    </div>
+                    <div class="calificacion">
+                        <p>Califica este artículo:</p>
+                        <div class="estrellas" data-rating="0">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                        <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                    </div>
+                </article>
+                <article>
+                    <div class="artículos">
+                        <header>
+                            <h2>Orden de los Artículos</h2>
+                        </header>
+                    </div>
+                    <div class="contenido">
+                        <p class="fecha">20/02/2024</p>
+                        <p>En nuestra constante búsqueda de optimizar la experiencia de usuario en nuestro blog, estamos emocionados de anunciar una mejora significativa: ¡hemos reorganizado todos nuestros artículos para presentarlos de los más recientes a los más antiguos!</p>
+                        <p>Esta decisión se basa en nuestro compromiso de hacer que la exploración de nuestro contenido sea aún más intuitiva y agradable para nuestros lectores. Ahora, al navegar por la sección de noticias, encontrarás las actualizaciones más recientes en la parte superior, permitiéndote acceder rápidamente a las novedades y eventos más actuales que compartimos.</p>
+                        <p>Al implementar este nuevo orden, queremos ofrecer a nuestros lectores un flujo de información más lógico y fácil de seguir. Comenzar con las noticias más recientes permite a los visitantes mantenerse al día con los acontecimientos más actuales antes de explorar nuestra rica historia de publicaciones.</p>
+                        <p>¿Cómo puedes disfrutar de esta nueva disposición? Es tan simple como desplazarte por nuestra sección de noticias y explorar los artículos en el orden en que fueron publicados. La opción de ordenar por recientes o más antiguos sigue disponible para ofrecer flexibilidad a aquellos que prefieren una experiencia de exploración personalizada.</p>
+                        <p>Esta actualización no solo mejora la usabilidad de nuestro blog, sino que también resalta la continuidad y evolución de nuestras publicaciones a lo largo del tiempo. Queremos que te sumerjas en la experiencia de nuestro blog de una manera que se adapte perfectamente a tus preferencias, y esta reorganización es un paso clave en esa dirección.</p>
+                        <p>Estamos entusiasmados con esta mejora y esperamos que encuentres valioso este nuevo enfoque en la presentación de nuestro contenido. Continuaremos trabajando para ofrecer la mejor experiencia posible a nuestros lectores. ¡Sigue explorando y descubriendo más en el Blog San Luisano!</p>
+                    </div>
+                    <div class="comentarios-seccion">
+                        <h3>Comentarios</h3>
+                        <div class="comentarios-lista"></div>
+                        <form class="form-comentario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="nombre" name="nombre" required>
+                            <label for="comentario">Comentario:</label>
+                            <textarea class="comentario" name="comentario" required></textarea>
+                            <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                        </form>
+                    </div>
+                    <div class="calificacion">
+                        <p>Califica este artículo:</p>
+                        <div class="estrellas" data-rating="0">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                        <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                    </div>
+                </article> 
+                <article>
+                    <div class="artículos">
+                        <header>
+                            <h2>Implementación del Modo Oscuro</h2>
+                        </header>
+                    </div>
+                    <div class="contenido">
+                        <p class="fecha">20/02/2024</p>
+                        <p>Estamos emocionados de anunciar la reciente implementación del tan esperado "Modo Oscuro" en nuestro sitio web. Esta característica proporciona a nuestros usuarios la flexibilidad de personalizar su experiencia de navegación, permitiéndoles elegir entre el tradicional "Modo Claro" o el elegante "Modo Oscuro".</p>
+                        <p>Entendemos que la preferencia por el modo de color puede variar entre los usuarios, y es por eso que nos esforzamos por ofrecer opciones que se adapten a cada estilo y necesidad. La implementación del Modo Oscuro no solo es estéticamente atractiva, sino que también proporciona beneficios prácticos.</p>
+                        <p>Al activar el Modo Oscuro, la interfaz del sitio adopta una paleta de colores más tenue, lo que puede resultar más suave para los ojos, especialmente en condiciones de poca luz. Esto no solo mejora la legibilidad, sino que también puede ayudar a reducir la fatiga visual, brindando una experiencia de navegación más cómoda y agradable.</p>
+                        <p>¿Cómo puedes activar el Modo Oscuro? Es tan sencillo como hacer clic en el botón de alternancia ubicado en la parte superior de la página. Basta con seleccionar tu preferencia y disfrutar de la nueva apariencia del sitio adaptada a tus gustos personales.</p>
+                        <p>Además, nos complace informarte que hemos diseñado cuidadosamente la transición entre el Modo Claro y el Modo Oscuro para que sea suave y sin interrupciones. Ya sea que prefieras la luminosidad del día o la elegancia de la noche, nuestro sitio se ajustará perfectamente a tu elección.</p>
+                        <p>Estamos comprometidos en ofrecer una experiencia de usuario excepcional, y la introducción del Modo Oscuro es solo una de las muchas mejoras que estamos implementando. ¡Esperamos que disfrutes de esta nueva función y agradecemos tu continuo apoyo mientras seguimos mejorando tu experiencia en nuestro sitio web!</p>
+                    </div>
+                    <div class="comentarios-seccion">
+                        <h3>Comentarios</h3>
+                        <div class="comentarios-lista"></div>
+                        <form class="form-comentario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="nombre" name="nombre" required>
+                            <label for="comentario">Comentario:</label>
+                            <textarea class="comentario" name="comentario" required></textarea>
+                            <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                        </form>
+                    </div>
+                    <div class="calificacion">
+                        <p>Califica este artículo:</p>
+                        <div class="estrellas" data-rating="0">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                        <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                    </div>
+                </article>
+                <article>
+                    <div class="artículos">
+                        <header>
+                            <h2>Hosting en Netlify</h2>
+                        </header>
+                    </div>
+                    <div class="contenido">
+                        <p class="fecha">19/02/2024</p>
+                        <p>Aprovechamos la robusta plataforma de Netlify para alojar nuestro sitio web, previamente almacenado en Github. Esta integración ofrece un despliegue fluido y eficiente, garantizando la disponibilidad constante del sitio y facilitando actualizaciones rápidas y seguras..</p>
+                    </div>
+                    <div class="comentarios-seccion">
+                        <h3>Comentarios</h3>
+                        <div class="comentarios-lista"></div>
+                        <form class="form-comentario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="nombre" name="nombre" required>
+                            <label for="comentario">Comentario:</label>
+                            <textarea class="comentario" name="comentario" required></textarea>
+                            <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                        </form>
+                    </div>
+                    <div class="calificacion">
+                        <p>Califica este artículo:</p>
+                        <div class="estrellas" data-rating="0">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                        <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                    </div>
+                </article>   
+                <article>
+                    <div class="artículos">
+                        <header>
+                            <h2>Repositorio en GitHub</h2>
+                        </header>
+                    </div>
+                    <div class="contenido">
+                        <p class="fecha">19/02/2024</p>
+                        <p>En aras de una gestión eficiente y colaborativa, creamos un repositorio dedicado al sitio web en Github. Esta plataforma facilita el seguimiento de versiones, la colaboración entre miembros del equipo y la gestión integral del código fuente, asegurando un desarrollo organizado y transparente..</p>
+                    </div>
+                    <div class="comentarios-seccion">
+                        <h3>Comentarios</h3>
+                        <div class="comentarios-lista"></div>
+                        <form class="form-comentario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="nombre" name="nombre" required>
+                            <label for="comentario">Comentario:</label>
+                            <textarea class="comentario" name="comentario" required></textarea>
+                            <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                        </form>
+                    </div>
+                    <div class="calificacion">
+                        <p>Califica este artículo:</p>
+                        <div class="estrellas" data-rating="0">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                        <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                    </div>
+                </article>
+                <article>
+                    <div class="artículos">
+                        <header>
+                            <h2>Diseño del Navegador</h2>
+                        </header>
+                    </div>
+                    <div class="contenido">
+                        <p class="fecha">19/02/2024</p>
+                        <p>Elevamos la estética del navegador mediante el uso avanzado de CSS3, otorgándole un diseño más atractivo. La implementación de animaciones cuidadosamente seleccionadas no solo mejora la apariencia, sino que también añade un toque dinámico y visualmente agradable a la navegación.</p>
+                    </div>
+                    <div class="comentarios-seccion">
+                        <h3>Comentarios</h3>
+                        <div class="comentarios-lista"></div>
+                        <form class="form-comentario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="nombre" name="nombre" required>
+                            <label for="comentario">Comentario:</label>
+                            <textarea class="comentario" name="comentario" required></textarea>
+                            <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                        </form>
+                    </div>
+                    <div class="calificacion">
+                        <p>Califica este artículo:</p>
+                        <div class="estrellas" data-rating="0">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                        <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                    </div>
+                </article>
+                <article>
+                    <div class="artículos">
+                        <header>
+                            <h2>Implementación de la Fecha</h2>
+                        </header>
+                    </div>
+                    <div class="contenido">
+                        <p class="fecha">19/02/2024</p>
+                        <p>Para un mejor orden impletamos las fechas de emisión de cada artículo.</p>
+                    </div>
+                    <div class="comentarios-seccion">
+                        <h3>Comentarios</h3>
+                        <div class="comentarios-lista"></div>
+                        <form class="form-comentario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="nombre" name="nombre" required>
+                            <label for="comentario">Comentario:</label>
+                            <textarea class="comentario" name="comentario" required></textarea>
+                            <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                        </form>
+                    </div>
+                    <div class="calificacion">
+                        <p>Califica este artículo:</p>
+                        <div class="estrellas" data-rating="0">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                        <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                    </div>
+                </article>
+                <article>
+                    <div class="artículos">
+                        <header>
+                            <h2>Vista de artículos</h2>
+                        </header>
+                    </div>
+                    <div class="contenido">
+                        <p class="fecha">19/02/2024</p>
+                        <p>Avanzamos con la edición del sitio web, enfocándonos en visualizar cómo se presentaría con múltiples artículos en el blog.</p>
+                    </div>
+                    <div class="comentarios-seccion">
+                        <h3>Comentarios</h3>
+                        <div class="comentarios-lista"></div>
+                        <form class="form-comentario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="nombre" name="nombre" required>
+                            <label for="comentario">Comentario:</label>
+                            <textarea class="comentario" name="comentario" required></textarea>
+                            <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                        </form>
+                    </div>
+                    <div class="calificacion">
+                        <p>Califica este artículo:</p>
+                        <div class="estrellas" data-rating="0">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                        <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                    </div>
+                </article>
+                <article>
+                    <div class="artículos">
+                        <header>
+                            <h2>CSS del blog</h2>
+                        </header>
+                    </div>
+                    <div class="contenido">
+                        <p class="fecha">19/02/2024</p>
+                        <p>Este día, mientras trabajábamos en la creación del blog, dedicamos tiempo a personalizar su estilo. Nos inspiramos en la paleta de colores del sitio web de la Universidad para la elaboración del website.</p>
+                    </div>
+                    <div class="comentarios-seccion">
+                        <h3>Comentarios</h3>
+                        <div class="comentarios-lista"></div>
+                        <form class="form-comentario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="nombre" name="nombre" required>
+                            <label for="comentario">Comentario:</label>
+                            <textarea class="comentario" name="comentario" required></textarea>
+                            <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                        </form>
+                    </div>
+                    <div class="calificacion">
+                        <p>Califica este artículo:</p>
+                        <div class="estrellas" data-rating="0">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                        <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                    </div>
+                </article>
+                <article>
+                    <div class="artículos">
+                        <header>
+                            <h2>Creación del Blog</h2>
+                        </header>
+                    </div>
+                    <div class="contenido">
+                        <p class="fecha">19/02/2024</p>
+                        <p>Iniciamos hoy el proceso de desarrollo del sitio web, empleando HTML y CSS para su construcción.</p>
+                    </div>
+                    <div class="comentarios-seccion">
+                        <h3>Comentarios</h3>
+                        <div class="comentarios-lista"></div>
+                        <form class="form-comentario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="nombre" name="nombre" required>
+                            <label for="comentario">Comentario:</label>
+                            <textarea class="comentario" name="comentario" required></textarea>
+                            <button type="button" class="agregar-comentario-btn">Agregar Comentario</button>
+                        </form>
+                    </div>
+                    <div class="calificacion">
+                        <p>Califica este artículo:</p>
+                        <div class="estrellas" data-rating="0">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <button class="enviar-calificacion-btn">Enviar Calificación</button>
+                        <p class="promedio">Promedio: <span class="promedio-valor">--</span></p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blog San Luisano. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
