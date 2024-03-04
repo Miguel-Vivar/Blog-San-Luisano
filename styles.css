@@ -384,3 +384,7 @@ button:hover {
     font-weight: bold;
     color: #333;
 }
+a {
+    text-decoration: none;
+    color: #e0b12d;
+}
